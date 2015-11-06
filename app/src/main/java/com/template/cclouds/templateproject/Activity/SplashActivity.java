@@ -47,6 +47,8 @@ public class SplashActivity extends AppCompatActivity implements StartupFragment
         fragmentTransaction.add(R.id.main,signupFragment, SIGNUP_KEY);*/
         goToStartUpFragment();
 
+        /* This is atest */
+
     }
     @Override
     public void goToStartUpFragment() {
