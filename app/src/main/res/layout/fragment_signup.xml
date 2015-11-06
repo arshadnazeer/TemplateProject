@@ -1,0 +1,136 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.template.cclouds.templateproject.Fragments.SignupFragment">
+
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+    <!-- TODO: Update blank fragment layout -->
+     <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+         android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+         android:background="?attr/colorPrimary"/>
+
+
+     <android.support.design.widget.TextInputLayout
+         android:id="@+id/input_layout_firstname"
+         android:layout_width="match_parent"
+         android:layout_marginTop="20dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/toolbar">
+
+     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+         android:layout_below="@+id/toolbar"
+        android:id="@+id/fname"
+        android:ems="10"
+        android:hint="First Name"
+        android:textSize="16sp"
+        android:layout_margin="16dp"/>
+
+     </android.support.design.widget.TextInputLayout>
+
+
+
+     <android.support.design.widget.TextInputLayout
+         android:id="@+id/input_layout_lastname"
+         android:layout_width="match_parent"
+         android:layout_marginTop="20dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/input_layout_firstname">
+
+     <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/lname"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:hint="Last Name"
+        android:layout_margin="16dp"
+        android:layout_below="@id/fname"/>
+
+     </android.support.design.widget.TextInputLayout>
+
+
+
+     <android.support.design.widget.TextInputLayout
+         android:id="@+id/input_layout_dob"
+         android:layout_width="match_parent"
+         android:layout_marginTop="20dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/input_layout_lastname">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/dob"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:hint="Date of Birth"
+        android:layout_margin="16dp"
+        android:layout_below="@id/lname"/>
+
+     </android.support.design.widget.TextInputLayout>
+
+
+     <android.support.design.widget.TextInputLayout
+         android:id="@+id/input_layout_phonenumber"
+         android:layout_width="match_parent"
+         android:layout_marginTop="20dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/input_layout_dob">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/phonenumber"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:phoneNumber="true"
+        android:hint="Phone Number"
+        android:layout_margin="16dp"
+        android:layout_below="@id/dob"/>
+
+     </android.support.design.widget.TextInputLayout>
+
+
+
+     <android.support.design.widget.TextInputLayout
+         android:id="@+id/input_layout_emailid"
+         android:layout_width="match_parent"
+         android:layout_marginTop="20dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/input_layout_phonenumber">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/email"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:hint="Email"
+        android:layout_margin="16dp"/>
+
+     </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_layout_emailid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="signup"/>
+
+
+     </RelativeLayout>
+
+     </ScrollView>
+
+</RelativeLayout>
